@@ -32,13 +32,49 @@
 
   function drawCircle() {
     // Create a new circle element
-    var circle = document.createElement("div");
+    var element=document.getElementById("circle");
+    
+    
+    // element.classList.remove("hide_circle");
+    // element.classList.add("show_circle");
+    // if(element.style.display=="none"){
+    //   element.style.display="block";
+    // }
+    // else{
+    //   element.style.display="none";
+    // }
+
+
+    if (element.classList.contains('hide_circle')){
+      element.classList.remove('hide_circle');
+      element.classList.add('show_circle');
+
+    }else{
+      element.classList.remove('show_circle');
+      element.classList.add('hide_circle');
+    }
+
+  }
+
+    // const myButton = document.querySelector('#myButton');
+
+    // myButton.addEventListener('click', () => {
+    //   if (myButton.classList.contains('active')) {
+    //     myButton.classList.remove('active');
+    //   } else {
+    //     myButton.classList.add('active');
+    //   }
+    // });
+    
 
     
-    circle.classList.add("circle");
-    
-    // Append the circle element to the rectangle element
-    document.getElementById("rectangle").appendChild(circle);
-  }
+    // element.classList.toggle("circle");
+    // x.classList.add("circle");
+    // document.getElementsByClassName("rectangle").appendChild(circle);
+  // };
+
+
+
+
 
   
