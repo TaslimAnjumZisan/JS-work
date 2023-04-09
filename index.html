@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="Asset/css/main.css">
     <link rel="stylesheet" href="Asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Asset/css/bootstrap.css">
     <!--style>
       .myBox {
 
@@ -43,8 +44,91 @@
         
           <div id="circle" class="circle hide_circle"></div>
         </div>
-        
-        
+        <div>
+          <h1>JavaScript String Methods</h1>
+          <ol>
+            <li>String length</li>
+            <li>String slice()</li>
+            <li>String substring()</li>
+            <li>String substr()</li>
+            <li>String replace()</li>
+            <li>String replaceAll()</li>
+            <li>String toUpperCase</li>
+            <li>String toLowerCase</li>
+            <li>String concat()</li>
+            <li>String trim()</li>
+            <li>String trinStart()</li>
+            <li>String trimEnd()</li>
+            <li>String padStart()</li>
+            <li>String padEnd()</li>
+            <li>String charAt()</li>
+            <li>String charCodeAt()</li>
+            <li>String split()</li>
+          </ol>
+        </div>
+        <div >
+          <h4>JavaScript String Length</h4>
+          <h5>Example</h5>
+          <p>let lenCheck="ABCDEFGHIJKLMNOPQRSTUVWXYZ";</p>
+          <p>The length of the string is:</p>
+          <p id="len"></p>
+        </div>
+        <div >
+          <h5>JavaScript String  slice()</h5>
+          
+            <ul>
+              <li>extract a part of a string</li>
+              <li>Return the extracted part in a new string</li>
+              <li>The method takes 2 parameters : start posotion, and end position</li>
+            </ul>
+            <h5>Example:1</h5>
+            <p>Slice out a portion of a string from position 7 to position 13</p>
+            <p>let slc="Apple, Banana, jackfruit, orange";</p>
+            <p id="slice"></p>
+            <h5>Example:2</h5>
+            <p>If we omit the second parameter, the method will slice rest of the part</p>
+            <p id="slice2"></p>
+            <h5>Example:3</h5>
+            <p>If the parameter is negative, the position is countes from the end of the string.</p>
+            <p id="slice3"></p>
+            <h5>Example:4</h5>
+            <p>The example slice out a portion of a string from position -12 to position -6.</p>
+            <p id="slice4"></p>
+        </div>
+        <div >
+          <h4>JavaScript String substring() </h4>
+          <ul>
+            <li>substring() is similar to slice()</li>
+            <li>The diffrence is that start and end values less than 0 are treated as 0 in substring()</li>
+          </ul>
+          
+          <h5>Example:1</h5>
+
+          <p>let substr="Rose, Tulip, Lily";</p>
+          <p id="substr1"></p>
+          <h5>Example:2</h5>
+          <p>the diffrence is that the second parameter specifies length of the extracted part</p>
+          <p id="substr2"></p>
+          <h5>Example:3</h5>
+          <p>If you omit the second parameter, substr() will slice out the rest of the string</p>
+          <p id="substr3"></p>
+          <h5>Example:4</h5>
+          <p>If the first parameter is negative, the position from the end of the string.</p>
+          <p id="substr4"></p>
+          
+        </div>
+
+        <!-- <div class="toast fade hide" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"></rect></svg>
+            <strong class="me-auto">Bootstrap</strong>
+            <small class="text-body-secondary">11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div> -->
         </main> 
 
       

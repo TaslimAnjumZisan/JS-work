@@ -56,6 +56,26 @@
 
   }
 
+  let lenCheck="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  document.getElementById("len").innerHTML=lenCheck.length;
+
+  let slc="Apple, Banana, jackfruit, orange";
+  document.getElementById("slice").innerHTML=slc.slice(7,13);//Banana
+  document.getElementById("slice2").innerHTML=slc.slice(7);//Banana, jackfruit, orange
+  document.getElementById("slice3").innerHTML=slc.slice(-12);//ruit, orange
+  document.getElementById("slice4").innerHTML=slc.slice(-26,-12);//Banana, jackf
+  let substr="Rose, Tulip, Lily";
+  document.getElementById("substr1").innerHTML=slc.substring(7,13);
+  document.getElementById("substr2").innerHTML=slc.substr(6,9);
+  document.getElementById("substr3").innerHTML=slc.substring(7);
+  document.getElementById("substr4").innerHTML=slc.substring(-4);
+ 
+  
+
+
+
+
+
     // const myButton = document.querySelector('#myButton');
 
     // myButton.addEventListener('click', () => {
