@@ -107,8 +107,23 @@
   let text=document.getElementById("lowCase").innerHTML;
   document.getElementById("lowCase").innerHTML=text.toLowerCase();
  }
+function concat(){
+  let text1="Hello";
+  let text2="world";
+  document.getElementById("cont").innerHTML=text1.concat(" ",text2);
+}
 
+function trim(){
+  let x="            Hellow world";
+  document.getElementById("trm").innerHTML=x.trim();
 
+}
+
+function startSTrim(){
+  let x="            Hellow world";
+  document.getElementById("trm2").innerHTML=x.trimStart();
+
+}
     // const myButton = document.querySelector('#myButton');
 
     // myButton.addEventListener('click', () => {
