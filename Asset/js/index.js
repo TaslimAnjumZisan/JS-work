@@ -124,6 +124,17 @@ function startSTrim(){
   document.getElementById("trm2").innerHTML=x.trimStart();
 
 }
+function startPad(){
+  let text="3";
+  document.getElementById("Strpd").innerHTML=text.padStart(4,"X");
+}
+
+function startPad(){
+  let text="3";
+  document.getElementById("Strpd").innerHTML=text.padStart(4,"X");
+
+}
+
     // const myButton = document.querySelector('#myButton');
 
     // myButton.addEventListener('click', () => {
