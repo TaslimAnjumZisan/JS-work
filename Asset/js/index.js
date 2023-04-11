@@ -65,15 +65,48 @@
   document.getElementById("slice3").innerHTML=slc.slice(-12);//ruit, orange
   document.getElementById("slice4").innerHTML=slc.slice(-26,-12);//Banana, jackf
   let substr="Rose, Tulip, Lily";
-  document.getElementById("substr1").innerHTML=slc.substring(7,13);
+  document.getElementById("substr1").innerHTML=slc.substr(7,13);
   document.getElementById("substr2").innerHTML=slc.substr(6,9);
-  document.getElementById("substr3").innerHTML=slc.substring(7);
-  document.getElementById("substr4").innerHTML=slc.substring(-4);
+  document.getElementById("substr3").innerHTML=slc.substr(7);
+  document.getElementById("substr4").innerHTML=slc.substr(-4);
  
-  
+  function changeStr(id, sourceText, updateText){
+    let text=document.getElementById(id).innerHTML;
+    document.getElementById(id).innerHTML=text.replace(sourceText,updateText);
+    //document.getElementById(id).innerHTML=text.replaceAll(sourceText,updateText);
+  }
+
+  function changeStr2(id,sourceText,updateText){
+    let text=document.getElementById(id).innerHTML;
+    document.getElementById(id).innerHTML=text.replaceAll(sourceText,updateText);
+  }
+  // function changeStr2(){
+  //   let text=document.getElementById("chng2").innerHTML;
+  //   document.getElementById("chng2").innerHTML=text.replace();
+  // }
+  // function changeStr3(){
+  //   let text=document.getElementById("chag3").innerHTML;
+  //   document.getElementById("chng3").innerHTML=text.replace("MICROSOFT","W3Schools");
+  // }
+  // function changeStr4(){
+  //   let text1=document.getElementById("chng4").innerHTML;
+  //   document.getElementById("chng4").innerHTML=text1.replace( /MICROSOFT/i,"W3Schools");
+  // }
+
+  // function changeStr5(){
+  //   let text=document.getElementById("chng5").innerHTML;
+  //   document.getElementById("chng5").innerHTML=text.replaceAll(/W3Schools/g,"Microsoft");
+  // }
 
 
-
+ function upperCase(){
+  let text=document.getElementById("upCase").innerHTML;
+  document.getElementById("upCase").innerHTML=text.toUpperCase();
+ }
+ function lowerCase(){
+  let text=document.getElementById("lowCase").innerHTML;
+  document.getElementById("lowCase").innerHTML=text.toLowerCase();
+ }
 
 
     // const myButton = document.querySelector('#myButton');

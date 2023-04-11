@@ -67,56 +67,129 @@
           </ol>
         </div>
         <div >
-          <h4>JavaScript String Length</h4>
+          <h4 class="text-primary">JavaScript String Length</h4>
           <h5>Example</h5>
           <p>let lenCheck="ABCDEFGHIJKLMNOPQRSTUVWXYZ";</p>
           <p>The length of the string is:</p>
           <p id="len"></p>
         </div>
         <div >
-          <h5>JavaScript String  slice()</h5>
+          <h4 class="text-primary">JavaScript String  slice()</h4>
           
             <ul>
-              <li>extract a part of a string</li>
-              <li>Return the extracted part in a new string</li>
-              <li>The method takes 2 parameters : start posotion, and end position</li>
+              <li class="text-danger">extract a part of a string</li>
+              <li class="text-danger">Return the extracted part in a new string</li>
+              <li class="text-danger">The method takes 2 parameters : start posotion, and end position</li>
             </ul>
-            <h5>Example:1</h5>
+            <h5 class="text-warning">Example:1</h5>
             <p>Slice out a portion of a string from position 7 to position 13</p>
             <p>let slc="Apple, Banana, jackfruit, orange";</p>
             <p id="slice"></p>
-            <h5>Example:2</h5>
+            <h5 class="text-warning">Example:2</h5>
             <p>If we omit the second parameter, the method will slice rest of the part</p>
             <p id="slice2"></p>
-            <h5>Example:3</h5>
+            <h5 class="text-warning">Example:3</h5>
             <p>If the parameter is negative, the position is countes from the end of the string.</p>
             <p id="slice3"></p>
-            <h5>Example:4</h5>
+            <h5 class="text-warning">Example:4</h5>
             <p>The example slice out a portion of a string from position -12 to position -6.</p>
             <p id="slice4"></p>
         </div>
         <div >
-          <h4>JavaScript String substring() </h4>
+          <h4 class="text-primary">JavaScript String substring() </h4>
           <ul>
-            <li>substring() is similar to slice()</li>
-            <li>The diffrence is that start and end values less than 0 are treated as 0 in substring()</li>
+            <li class="text-danger">substring() is similar to slice()</li>
+            <li class="text-danger">The diffrence is that start and end values less than 0 are treated as 0 in substring()</li>
           </ul>
-          
-          <h5>Example:1</h5>
-
           <p>let substr="Rose, Tulip, Lily";</p>
+          <h5 class="text-warning">Example:1</h5>
+          <p></p>
           <p id="substr1"></p>
-          <h5>Example:2</h5>
+          <h5 class="text-warning">Example:2</h5>
           <p>the diffrence is that the second parameter specifies length of the extracted part</p>
           <p id="substr2"></p>
-          <h5>Example:3</h5>
+          <h5 class="text-warning">Example:3</h5>
           <p>If you omit the second parameter, substr() will slice out the rest of the string</p>
           <p id="substr3"></p>
-          <h5>Example:4</h5>
+          <h5 class="text-warning">Example:4</h5>
           <p>If the first parameter is negative, the position from the end of the string.</p>
           <p id="substr4"></p>
           
         </div>
+        <div>
+          <h4 class="text-primary">Replacing String Content</h4>
+          <ul>
+            <li>Used for replacing one string to another String</li>
+          </ul>
+          <h5 class="text-warning">Example:1</h5>
+          <p>The <span class="text-danger">replace()</span> method replache a specified value with another value in a string.</p>
+          <p>Replace "Microsoft" with "W3Schools" in the prargraph below:</p>
+         
+          <button class="btn btn-primary" onclick="changeStr('chng1','Microsoft','W3Schools')">Change</button>
+          <p id="chng1">Please visit Microsoft</p>
+          
+
+        </div>
+        <div class="bg-warning img-thumbnail">
+          <h3>NOTE</h3>
+          <ul>
+            <li>The replace() method dose not change the string it is called on.</li>
+            <li>The replace() method returns a new string.</li>
+            <li>The replace() methodreplace only the first match</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-warning">Example:2</h5>
+          <p>By default, the replace() method replaces only rhe first match</p>
+          <button class="btn btn-primary" onclick="changeStr('chng2','W3Schools','Microsoft')">Change</button>
+          <p id="chng2">Please visit W3Schools and W3Schools!</p>
+         
+          <h5 class="text-warning">Example:3</h5>
+          <p>By default, the replace() method is case sensetive. Writing MICROSOFT (with uppercase) will not work: </p>
+          <button class="btn btn-primary" onclick="changeStr('chng3','MICROSOFT','W3Schools')">Change</button>
+          <p id="chng3">Please visit Microsoft</p>
+
+          <h5 class="text-warning">Example:4</h5>
+          <p>By default, the replace() method is case sensetive.<br> Writing MICROSOFT (with uppercase) will not work:<br>To place case insensitive, use a regular expression with an /i flag(insensitive): </p>
+          <button class="btn btn-primary" onclick="changeStr('chng4',/MICROSOFT/i,'W3Schools')">Change</button>
+          <p id="chng4">Please visit Microsoft</p>
+        </div>
+        <div class="bg-warning img-thumbnail">
+          <h3>NOTE</h3>
+          <ul>
+            <li>Regular expressions are written without quotes</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-warning">Example:5</h5>
+          <p>To replace all matches, use a regular expression with a <span>/g</span> flag(global match)</p>
+          <button class="btn btn-primary" onclick="changeStr('chng5',/W3Schools/g,'Microsoft')">Change</button>
+          <p id="chng5">Please visit W3Schools and W3Schools!</p>
+
+          <h5 class="text-warning">Example:6</h5>
+          <p>To replace all the element at a time using <span>replaceAll()</span> method </p>
+          <button class="btn btn-primary" onclick="changeStr2('chng6',/Cats/g,'Dogs',/cats/g,'dogs')">Change</button>
+          <p id="chng6">I love cats. Cats are very easy to love. Cats are very popular</p>
+        </div>
+        <div>
+          <h4 class="text-primary">Convert to Upper and Lower Case</h4>
+          <h4>toUpperCase()</h4>
+          <ul>
+            <li>To convert a string uppercase from lowercase with <span>toUpperCase()</span></li>
+          </ul>
+          <button class="btn btn-primary" onclick="upperCase()">change</button>
+          <p id="upCase">Hellow World</p>
+
+          <h4 class="text-primary">Convetin to Lowercase from upperCase with <span>toLowerCase</span>
+            <h4>toLowererCase()</h4>
+          <ul>
+            <li>To convert a string lowercase from uppercase with <span>toUpperCase()</span></li>
+          </ul>
+          <button class="btn btn-primary" onclick="lowerCase()">change</button>
+          <p id="lowCase">Hellow World</p>
+
+        </div>
+     
 
         <!-- <div class="toast fade hide" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
