@@ -221,11 +221,64 @@
           <p>to support at the beggining and at the end of the string</p>
           <h4 class=" text-primary">JavaScript String PadStart()</h4>
           <ul>
-            <li>The <span>padStart()</span> method pads a string form the start.</li>
+            <li>The <span class="text-danger">padStart()</span> method pads a string form the start.</li>
             <li>It pads a string with another string(multiple times) untile it reaches a given length.</li>
           </ul>
           <button class="btn btn-primary" onclick="startPad()">padStart</button>
           <p id="Strpd"></p>
+
+          <h4 class="text-primary">JavaScript String padEnd() </h4>
+          <ul>
+            <li>The <span class="text-danger">padEnd()</span> method pads a string from the end</li>
+            <li>It pads a string with another string (multiple times) until it reaches a given length</li>
+          </ul>
+          <button class="btn btn-primary" onclick="endPad()">padEnd</button>
+          <p id="Endpd"></p>
+        </div>
+        <div class="bg-warning img-thumbnail">
+          <h3>NOTE</h3>
+          <ul>
+            <li>The <span class="text-danger">padEnd()</span> method is a string method</li>
+           
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-primary"> JavaScript String Characters</h4>
+          <p>There are 3 methods for extracting string characters</p>
+          <ul>
+            <li>charAt(position)</li>
+            <li>charCodeAt(position)</li>
+            <li>property access []</li>
+          </ul>
+          <h4 class=" text-primary">JavaScript String charAt()</h4>
+          <p>The <span class="text-danger">charAt()</span> method returnd the character at a specified index (position) in a string</p>
+          <button class="btn btn-primary" onclick="charAt()">CharAt</button>
+          <p id="charat"></p>
+
+          <h4 class="text-primary"> JavaScript String charCodeAt()</h4>
+          <p>The <span class="text-danger">charCodeAt()</span> method returns the unicode of the character at a specified index in a string</p>
+          <ul>
+            <li><span class="text-danger">charCodeAt()</span> method returns a UTF-16 code (an integer between 0 and 65535)</li>
+          </ul>
+          <button class="btn btn-primary" onclick="charCodeAt()">unicode</button>
+          <p id="charcodeat"></p>
+
+          <h4 class="text-primary">Property Access</h4>
+          <ul>
+            <li>It makes string look like array but they are not array</li>
+            <li>If no character is found, [] returns undefined while charAt() retuns an empty string</li>
+            <li>It is only read only. str[0]="A" given no error but does not work!</li>
+          </ul>
+          <button class="btn btn-primary" onclick="propertyAccess()">Try it</button>
+          <p id="property"></p>
+        </div>
+        <div>
+          <h4 class="text-primary"> JavaScript String to an Array</h4>
+          <p>If you want to work with a string as an array, you can convert it to an array</p>
+          <h5 class="text-primary">JavaScript String split()</h5>
+          <p>A string can be converted to an array with the <span class="text-danger">split()</span> method</p>
+          <button class="btn btn-primary" onclick="split()">try it</button>
+          <p id="split"></p>
         </div>
      
 
@@ -240,7 +293,27 @@
             Hello, world! This is a toast message.
           </div>
         </div> -->
-        </main> 
+
+        <div class="bg-light">
+          <h1> String Search Methods</h1>
+          <ol>
+            <li>String indexOf()</li>
+            <li>String lastIndexOf()</li>
+            <li>String search()</li>
+            <li>String match()</li>
+            <li>String matchAll()</li>
+            <li>String includes()</li>
+            <li>String startsWith</li>
+            <li>String endsWith</li>
+          </ol>
+        </div>  
+
+        <div>
+          <h4 class="text-primary">JavaScript String indexOf()</h4>
+          <p>The <span class="text-danger">indexOf()</span> method returns the index (position) the first occurrence of a string in a string</p>
+          
+        </div>
+      </main> 
 
       
 
@@ -248,7 +321,7 @@
         
   
     
-        <script src="Asset/js/index.js"></script>
+    <script src="Asset/js/index.js"></script>
     <script src="Asset/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -129,10 +129,36 @@ function startPad(){
   document.getElementById("Strpd").innerHTML=text.padStart(4,"X");
 }
 
-function startPad(){
-  let text="3";
-  document.getElementById("Strpd").innerHTML=text.padStart(4,"X");
+function endPad(){
+  let text="7";
+  document.getElementById("Endpd").innerHTML=text.padEnd(3,"X");
 
+}
+function charAt(){
+  var text="How are you!!";
+  document.getElementById("charat").innerHTML=text.charAt(2);
+}
+
+function charCodeAt(){
+  let text="How are you!!";
+  document.getElementById("charcodeat").innerHTML=text.charCodeAt(2);
+}
+
+function propertyAccess(){
+  let text="How are you!!";
+  document.getElementById("property").innerHTML=text[2];
+}
+
+function split(){
+  let text="a,b,c,d,e,f";
+  const myar1=text.split(",");
+  let text2="a,b,c,d,e,f";
+  const myar2=text2.split("");
+  let text3="x|y|z|w|u";
+  const myar3=text3.split("|");
+  document.getElementById("split").innerHTML=myar1[1];
+  document.getElementById("split").innerHTML=myar2[1];
+  // document.getElementById("split").innerHTML=myar3[1];
 }
 
     // const myButton = document.querySelector('#myButton');
